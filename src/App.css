@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #172554;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px;
+}
+
+header {
+  background: #172554;
+  color: white;
+  padding: 28px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  margin: 0 0 8px;
+}
+
+header p {
+  color: #bfdbfe;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.summary-card,
+.student-card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #00000010;
+}
+
+.summary-card h3 {
+  color: #64748b;
+}
+
+.summary-card h1 {
+  font-size: 32px;
+  color: #2563eb;
+}
+
+.student-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.student-card {
+  border: 1px solid #e2e8f0;
+}
+
+.student-card h2 {
+  color: #1d4ed8;
+}
+
+.student-card p {
+  color: #64748b;
+}
+
+.student-card h4 {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.present, .absent {
+  padding: 11px 22px;
+  margin: 8px 8px 0 0;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+.present {
+  background: #16a34a;
+}
+
+.absent {
+  background: #dc2626;
+}
+
+.not-marked {
+  color: #d97706;
+}
+
+.present {
+  color: white;
+}
+
+.absent {
+  color: white;
+}
+
+@media (max-width: 650px) {
+  .summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .student-list {
+    grid-template-columns: 1fr;
+  }
+}
